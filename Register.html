@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Registration</title>
+       <link rel="stylesheet" href="Styles/reg-style.css"/>
+   </head>
+
+   <body>
+    <div class="login-form">
+
+        <div class="card-back" id="card-back">
+          <form action="">
+              <h3>Register</h3>
+            <input type="radio" name="student" class="radioBtn"><span>student</span>
+            <input type="radio" name="student" class="radioBtn"><span>teacher</span>
+              <input type="firstname" placeholder="firstname" class="box">
+              <input type="lastname" placeholder="lastname" class="box">
+              <input type="email" placeholder="e-mail" class="box">
+              <input type="username" placeholder="username" class="box">
+              <input type="password" placeholder="password" class="box">
+              <input type="button" class="btn" onclick="javascript:history.back()" value="register">
+              <p>i have an account <a href="card-front">login here</a>
+<a href="javascript:history.back()">Go Back</a></p>
+              <i class="fas fa-times"></i>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        var login = document.getElementById('login-form');
+        function openLogin(){
+          login.innerHTML('login-form')
+        }
+      </script>
+      </body>
+</html>
